@@ -56,11 +56,18 @@
             </fieldset>
             <fieldset>
                 <label for="tele">Phone (recommended)</label>
-                <input type="tel" id="tele" placeholder="Helps with lost passwords and security">
+                <div class="tooltip">
+                    <input type="tel" id="tele" placeholder="Helps with lost passwords and security">
+                    <span class="tele-subscript">Standard call, messaging or data rates may apply.</span>
+                    <span class="tooltiptext">We strongly recommend adding a phone number. This will help verify your account and keep it safe.</span>
+                </div>
             </fieldset>
             <fieldset>
                 <label for="pass">Password</label>
-                <input type="password" id="pass" placeholder="Don't reuse an old password">
+                <div class="tooltip">
+                    <input type="password" id="pass" placeholder="Don't reuse an old password">
+                    <span class="tooltiptext">Create a password you've never used before. This will help keep your account safe.</span>
+                </div>
             </fieldset>
             <div class="create-button-wrapper">
                 <button>
