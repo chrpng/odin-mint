@@ -1,0 +1,358 @@
+fieldset {
+    border-style: none;
+}
+ul, li, fieldset {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* ==================
+    Skeleton
+   ================== */
+body {
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #4c4c4c;
+    background: #eceef1;
+    box-sizing: border-box;
+}
+.signup-container {
+    width: 360px;
+    margin: 0 auto;
+    padding: 30px;
+}
+li {
+    display: inline-block;
+}
+h1 {
+    font-weight: 300;
+    font-size: 1.8em;
+}
+
+/* ==================
+    Nav
+   ================== */
+
+nav {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.signin {
+    float: right;
+    vertical-align: top;
+}
+
+.signin>div {
+    display: inline-block;
+}
+.signin-info {
+    font-size: 0.85em;
+    line-height: 1.5em;
+    text-align: right;
+}
+.signin-info a:hover{
+    text-decoration: none;
+}
+.signin-button-wrapper {
+    margin-left: 10px;
+    float: right;
+}
+
+/* ==================
+    Header
+   ================== */
+.logo-container {
+    text-align: center;
+}
+
+.logo-container>img {
+    width: 118px;
+    height: 35px;
+    object-fit: none;
+    /* gray logo */
+    object-position: 0 0;
+    /* blue logo */
+    /* object-position: -236px 0;*/
+    margin-bottom:12px;
+}
+.product-list {
+    margin: 16px;
+}
+.product-list li {
+    margin-right: 5px;
+}
+.product-list li:last-child {
+    margin-right: 0;
+}
+.product-list .mint-text {
+    vertical-align: 5px;
+}
+.product-list .quickbooks-text {
+    vertical-align: 0;
+}
+.product-list .turbotax-text {
+    vertical-align: 5px;
+}
+.software-logo {
+    height: 23px;
+}
+
+/* ==================
+    Main
+   ================== */
+.signup-container {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: white;
+}
+
+.signup-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.signup-header a {
+    font-size: 0.9em;
+}
+
+.signup-main {
+    border-bottom: none;
+}
+
+.recaptcha {
+    text-align: center;
+    background-color: #eee;
+    background-clip: padding-box;
+    border-top: none;
+    font-size: 0.8em;
+    color: #757575;
+    margin-bottom: 26px;
+}
+
+/* ==================
+    Form
+   ================== */
+
+fieldset {
+    height: 95px;
+}
+fieldset>label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+input {
+    width: 100%;
+    /* width: 340px; */
+    padding: 7px 8px;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+input::placeholder {
+    color: transparent;
+}
+input:invalid {
+    border: 1px solid #ee0000;
+    background: url(images/warning@44.png) right/1rem no-repeat content-box;
+}
+.error {
+    display: none;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+input:invalid:not(:focus) + .error {
+    display: block;
+    color: #ee0000;
+}
+input:focus {
+    outline: none;
+    border: 1px solid #68bbf1;
+    box-shadow: 0 0 7px #4cb1f5b0;
+    background: none;
+}
+.terms {
+    font-style: italic;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    color: #757575;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ==================
+    Tooltip
+   ================== */
+.tooltip {
+    position: relative;
+    /* display: inline-block; */
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 190px;
+    background-color: black;
+    color: white;
+    font-size: 0.9em;
+    padding: 10px 20px;
+    border-radius: 4px;
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(100% + 18px);
+}
+.tooltiptext::before {
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 6px);
+    left: -6px;
+    content: '';
+    height: 12px;
+    width: 12px;
+    background-color: black;
+
+    transform: rotate(45deg);
+}
+input:focus ~ .tooltiptext {
+    visibility: visible;
+}
+
+/* ==================
+    Footer
+   ================== */
+footer {
+    text-align: center;
+}
+
+.signup-container+footer {
+    font-size: 0.85em;
+    color: #505050;
+    line-height: 1.5em;
+}
+
+.footer-links li {
+    padding-left: 5px;
+}
+
+.footer-links li:first-child {
+    padding-left: 0;
+}
+
+.footer-links a {
+    color: #505050;
+}
+.footer-links a:visited {
+    color: #505050;
+}
+
+/* ==================
+    Button
+   ================== */
+button {
+    background: #0077c5;
+    border: 1px solid black;
+    color: white;
+    font-size: 1em;
+    padding: 0.5em 1.4em;
+    border-radius: 4px;
+}
+.lock-img {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background: url(images/icon-whitelock.png) no-repeat;
+    background-size: contain;
+}
+.create-button-wrapper button {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.15em;
+    font-weight: 400;
+    padding: 0.7em 2em;
+}
+.create-button-wrapper {
+    padding: 0 2px;
+    margin-bottom: 40px;
+}
+
+/* ==================
+    Links
+   ================== */
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0077c5;
+}
+
+/* ==================
+    Animate
+   ================== */
+
+
+.product-list img {
+    position: relative;
+    left: 142px;
+}
+/* Software Logo Animations */
+.mint-logo {
+    animation: grow 1.1s ease-in-out forwards, slide-left 1.1s cubic-bezier(0.7, 0, 0, 1) 1.1s forwards;
+}
+.mint-text {
+    opacity: 0;
+    animation: slide-left 1.1s ease-out 1.1s forwards, fade-in .6s ease-in 1.9s forwards;
+}
+.quickbooks-logo, .quickbooks-text {
+    opacity: 0;
+    animation: slide-left 1.1s ease-out 1.3s forwards, fade-in .6s ease-in 2.1s forwards;
+}
+.turbotax-logo, .turbotax-text {
+    opacity: 0;
+    animation: slide-left 1.1s ease-out 1.5s forwards, fade-in .6s ease-in 2.3s forwards;
+}
+@keyframes grow {
+    50% {
+        transform: scale(2,2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes slide-left {
+    100% {
+        left: 0;
+    }
+}
+
+/* Intuit Logo Animation */
+.logo-container>img {
+    opacity: 0;
+    animation: fade-in 1.1s ease-out 1.5s forwards
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ==================
+    Responsive
+   ================== */
+
+@media (max-width: 767px) {
+    nav {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    input::placeholder {
+        color: #ddd;
+    }
+}
